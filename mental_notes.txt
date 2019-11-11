@@ -1,0 +1,26 @@
+python 3
+py -m http.server 8080
+
+python 2
+python -m SimpleHTTPServer 8080
+
+
+
+
+# How to setup Visual Studio Code auto complete:
+
+1- Open a folder in VSCode
+
+2- Create a `jsconfig.json` file at the root of that folder.
+That file indicates to VSCode that it is a JavaScript project.
+Just put inside that file this content:
+
+{
+}
+
+3- Create a `defs` folder and copy there the Phaser typescript definitions.
+I just named it `defs` but you can use your own name.
+https://github.com/photonstorm/phaser3-docs/blob/master/typescript/phaser.d.ts
+
+4- Create a new `game.js` file and write some code there,
+it should auto-complete the Phaser API. 
